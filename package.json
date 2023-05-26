@@ -1,0 +1,29 @@
+{
+	"name": "chss_server",
+	"private": true,
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node dist/index.js",
+		"build": "tsc",
+		"dev": "nodemon --config nodemon.json src/index.ts",
+		"clean": "rimraf build logs",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@types/node": "^20.2.4",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
+		"nodemon": "^2.0.22",
+		"prettier": "^2.8.8",
+		"rimraf": "^5.0.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.3"
+	},
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"winston": "^3.8.2"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write"
+	}
+}

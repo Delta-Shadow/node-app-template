@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"strict": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"outDir": "build",
+		"lib": ["ES6", "DOM"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
