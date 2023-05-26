@@ -49,7 +49,12 @@ if (isProd()) {
 		}),
 		new transports.Console({
 			level: 'debug',
-			format: format.combine(format.simple(), format.errors(), format.metadata())
+			format: format.combine(
+				format.json(),
+				format.prettyPrint(),
+				format.errors(),
+				format.metadata()
+			)
 		})
 	)
 }
